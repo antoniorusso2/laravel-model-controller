@@ -14,7 +14,9 @@
 
     <h1>Homepage</h1>
 
-
+    @php
+        dd($movies); //collection
+    @endphp
 </body>
 
 </html>
