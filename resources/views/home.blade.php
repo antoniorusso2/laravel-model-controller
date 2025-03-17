@@ -25,12 +25,11 @@
             </div>
             <div class="row row-gap-3">
                 @foreach ($movies as $movie)
-                    <div class="col col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-4">
                         <div class="card">
-                            <h2>{{ $movie->original_title }}</h2>
                             <div class="card-body">
-
-                                <p class="subtitle">{{ $movie->title }}</p>
+                                <h2 class="card-title text-truncate">{{ $movie->title }}</h2>
+                                <p class="card-subtitle text-body-secondary">{{ $movie->original_title }}</p>
                                 <p>{{ $movie->description }}</p>
                                 <p>Data di uscita: {{ $movie->date }}</p>
                                 <p>Voto: {{ $movie->vote }}</p>
